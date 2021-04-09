@@ -1,0 +1,512 @@
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<title> Saying of Prophet</title>
+		
+		<script type = "text/javascript" src = "jquery.js">
+		</script>
+		
+		
+		<style = "text/css">
+		
+		body
+		{
+			<!--background-color:#3e7309e1;-->
+			
+			margin:1vw;
+			font-family: 'Akaya Telivigala', cursive;
+			color:#1743e3fe;
+			
+			background-color: #ddda25;
+			opacity: 0.9;
+			background: linear-gradient(135deg, #bcad0c55 0%, transparent 25%) -24px 0/ 48px 48px, linear-gradient(225deg, #bcad0c 0%, transparent 25%) -24px 0/ 48px 48px, linear-gradient(315deg, #bcad0c55 25%, transparent 25%) 0px 0/ 48px 48px, linear-gradient(45deg, #bcad0c 25%, #ddda25 25%) 0px 0/ 48px 48px;
+			
+			Z-index: 1;
+
+		}
+		
+		a:link
+		{
+			text-decoration: none;
+			color: #1324bdfe;
+		}
+		a:hover
+		{
+			color : #2e7d6bf1;
+		}
+		
+		.clear-float
+		{
+			clear:both;
+		}
+		
+		
+		#topbar
+		{
+			max-height:240px;
+			height:auto;
+			
+			
+		}
+		
+		#logo
+		{
+			
+			width:20%;
+			height: auto;
+			float:left;
+			border-radius:50%;
+			box-sizing:border-box;
+		}
+		#heading
+		{
+			width: 50%;
+			max-height: 20vw;
+			font-size:3vw;
+			padding: 1vw 2vw 2.5vw 3vw;
+			float:left;
+			text-align:center;	
+			
+			
+			<!--background-color:red;-->
+			font-weight:normal;	
+			color:#004d00;
+			font-family: 'Fredoka One', cursive;
+			position:relative;
+			top:-3vw;
+
+		}
+		h1
+		{
+			
+			
+		}
+		
+		
+		
+		#contact
+		{
+			height:auto;
+			width:22%;
+			float:left;
+			padding-top:2vw;
+			padding-left:1.5vw;
+			font-size: 1.4vw;
+
+			
+		}
+		#phone
+		{
+			width:3vw;
+			height:auto;
+			margin:.5vw;
+			
+		}
+		#menubar
+		{
+			margin: 10px auto;
+			width:97%;
+			
+			height:3.6vw;
+			
+			border: 5px groove grey;
+			color:#004d00
+			background-color:#F4F46F;
+			
+				
+
+		}
+		.menu
+		{
+			float: left;
+			width: 23.25%;
+			height:2vw;
+			padding: .45vw;
+			align:center;
+			font-size: 2.1vw;
+			font-weight:bold;
+			text-align: center;		
+			border: .37vw groove grey;		
+			font-family: 'Playfair Display', serif;
+			
+		}
+		
+		
+		#container
+		{
+			width:100%;
+			max-height: 100%;
+		
+			
+			
+		}
+		
+		
+		#content
+		{
+			font-size:1.5vw;
+			font-weight:bold;
+			width: 65%;
+			height: 100%;
+			
+			float:left;
+			border-right: .2vw solid grey;
+			
+
+		}
+		
+		button
+		{
+			border-radius: 50%;
+			background-color: #2e7d6bf1;
+			border: 3vw groove #2e7d6bf1;
+			color: #fce468;
+			margin: 1.5vw;
+			width: 15vw;
+			height: 9.9vw;
+			padding:0;
+			font-family: 'Fredoka One', cursive;
+			
+			
+			
+
+		}
+		
+		button:hover
+		{
+			background-color:#153b32f1;
+			cursor: pointer;
+		}
+		#prayerContent
+		{
+			display:none;
+			float:left;
+			background-color:white;
+			border-radius:20%;
+			padding: 2vw;
+			
+		}
+		#prayer
+		{
+			font-size:2vw;
+		}
+		#charityContent
+		{
+			display:none;
+			float:left;
+			
+		}
+		#charity
+		{
+			font-size:2vw;
+		}
+		#jihadContent
+		{
+			display:none;
+			float:left;
+			
+		}
+		#jihad
+		{
+			font-size:2vw;
+		}
+		#etiqutteContent
+		{
+			display:none;
+			float:left;
+			
+		}
+		#etiqutte
+		{
+			font-size:2vw;
+		}
+		#knowledgeContent
+		{
+			display:none;
+			float:left;
+			
+		}
+		#knowledge
+		{
+			font-size:1.8vw;
+			padding:0;
+			
+		}
+		#endOfTimeContent
+		{
+			display:none;
+			float:left;
+			
+		}
+		#endOfTime
+		{
+			font-size:1.6vw;
+			padding:0;
+			
+		}
+		#generalContent
+		{
+			display:none;
+			float:left;
+			
+			
+		}
+		#general
+		{
+			font-size:2vw;
+		}
+		
+		hr
+		{
+			max-width: 50%;
+			margin: 0px;
+		}
+		
+		#dailyQuote
+		{
+			font-size: 2.4vw;
+			color: red;
+			width:34.6%;
+			float:right;
+			height: 100%;
+			
+			opacity: 0.9;
+			background-image:  linear-gradient(30deg, #53681b 12%, transparent 12.5%, transparent 87%, #53681b 87.5%, #53681b), linear-gradient(150deg, #53681b 12%, transparent 12.5%, transparent 87%, #53681b 87.5%, #53681b), linear-gradient(30deg, #53681b 12%, transparent 12.5%, transparent 87%, #53681b 87.5%, #53681b), linear-gradient(150deg, #53681b 12%, transparent 12.5%, transparent 87%, #53681b 87.5%, #53681b), linear-gradient(60deg, #53681b77 25%, transparent 25.5%, transparent 75%, #53681b77 75%, #53681b77), linear-gradient(60deg, #53681b77 25%, transparent 25.5%, transparent 75%, #53681b77 75%, #53681b77);
+			background-size: 40px 70px;
+			background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+		
+
+		}
+		h2
+		{
+			font-size: 3vw;
+			text-align: center;
+			font-family: Times;
+		}
+		
+
+
+		
+		</style>
+	
+	
+	
+	
+	</head>
+	
+	<body>
+		<div id = "topbar">
+			<div > <img id = "logo" src = "images/logo.jpg" ></div>
+			<div id = "heading"><h1>Sayings Of<br> Prophet</h1></div>
+			<div id = "contact">
+			XXXXXXXXXX<img id = "phone" src = "images/phone.jpg"><br>
+			Sayings of Prophet<a href = "https://twitter.com/SayingofProphet?s=20"><img id = "phone" src = "images/twitter.png"></a>
+			</div>
+		</div>
+		
+		<div class = "clear-float"></div>
+		
+		
+		<div id = "menubar" >
+			<div class = "menu"><a href = "index.html">Home</a></div>
+			<div class = "menu"><a href = "farewell speech.html">Farewell Speech</a></div>
+			<div class = "menu"><a href = "history.html">Timeline</a></div>
+			<div class = "menu"><a href = "index.html">Three</a></div>
+		</div>
+		
+		<div class = "clear-float"></div>
+		
+		<div id = "container">
+
+			<div id = "content">
+				
+				<button id = "prayer"> <b>Prayer</b></button>
+				<div id = "prayerContent">
+					
+			
+					<p>"Whoever forgets a Salat then he is to pray it when he remembers it."<br><i> [Jami` at-Tirmidhi 178]</i></p>
+					<p>"The mu'adhdhin will receive forgiveness to the extent to which his voice reaches, and every moist and dry place will testify on his behalf"<br><i>[Sunan Abu-Dawud 515] </i></p>
+					<p>"Whenever anyone of you offers his prayer he is speaking in private to his Lord. "<br><i>[Sahih al-Bukhari 531] </i></p>
+					<p> "Whoever is in the Masjid waiting for the prayer, he is in a state of prayer."<br><i>[Sunan an-Nasa'i 734] </i></p>
+					<p>"No one will enter the Fire who prays before the sun rises and before it sets."<br><i>[Sunan an-Nasa'i 487]</i><p>
+					<p>"There is nothing between a person and disbelief except abandoning Salah."<br><i>[Sunan an-Nasa'i 464]</i><p>
+				<hr>
+				</div>
+				<br>
+				
+				
+				<button id = "charity"> <b>Charity</b></button>
+				<div id = "charityContent">
+				
+					<p>"Charity is not lawful for the rich nor for the physically fit."<br><i>[Jami` at-Tirmidhi 652]</i></p>
+					<p>"Charity given to the needy is (counted as) charity, and if it is given to relatives it is (counted as) two: charity and nurturing (the ties of kinship)."<br><i>[Jami` at-Tirmidhi 658]</i></p>
+					<p>"Do not count what you give, otherwise Allah, the Mighty and Sublime, will count what He gives to you."<br><i> [Sunan an-Nasa'i 2550]</i></p>
+					<hr>
+				</div>
+				<br>
+				
+				<button id = "jihad"> <b>Jihad</b></button>
+				<div id = "jihadContent">
+					<p>"Jihad of the elderly, the young, the weak, and women, is Hajj and Umarah."<br><i>[Sunan an-Nasa'i 2626]</i></p>
+					<p>"He who is killed in defence of his religion is a martyr, he who is killed in self-defence is a martyr, he who is killed in defence of his property is a martyr, and he who is killed in defence of his family is a martyr."<br><i>[Mishkat al-Masabih 3529]</i></p>
+					
+					<hr>
+				</div>
+				<br>
+				
+				<button id = "etiqutte"> <b>Etiquttes</b></button>
+				<div id = "etiqutteContent">
+					<p>"Avoid sitting on the paths."<br><i>[Sahih Muslim 2121]</i></p>
+					<p>"Ask permission to enter three times. If you are given permission, then enter. If not, go away."<br><i>[Muwatta Malik 1769]</i></p>
+					
+					<hr>
+				</div>
+				<br>
+				
+				
+				<button id = "knowledge"> <b>Knowledge</b></button>
+				<div id = "knowledgeContent">
+					
+					<p> <br><i> </i></p>
+					<p> "The superiority of the learned man over the devout is like that of the moon, on the night when it is full, over the rest of the stars."<br><i> [Sunan Abi Dawud 3641]</i></p>
+					<p> "He who is asked something he knows and conceals it will have a bridle of fire put on him on the Day of Resurrection."<br><i> [Sunan Abi Dawud 3658]</i></p>
+					<p> <br><i> </i></p>
+					<p> <br><i> </i></p>
+					
+					<hr>
+				
+				</div>
+				<br>
+				
+				<button id = "endOfTime"> <b>End Of Time</b></button>
+				<div id = "endOfTimeContent">
+					
+					<p> <br><i> </i></p>
+					<p>"A time will come when one will not care how one gains one's money, legally or illegally." <br><i>[Sahih al-Bukhari 2059] </i></p>
+					<p>"One of the portents of the Hour will be that people will show off in building Masjids."><br><i>[Sunan an-Nasa'i 5079]</i></p>
+					
+					<p> <br><i> </i></p>
+					<p> <br><i> </i></p>
+					
+					<hr>
+				
+				</div>
+				<br>
+				
+				<button id = "general"> <b>General</b></button>
+				<div id = "generalContent">
+				
+			
+					<p> "A Muslim is the one who avoids harming Muslims with his tongue and hands. And a Muhajir (emigrant) is the one who gives up (abandons) all what Allah has forbidden."<br><i>[Sahih al-Bukhari 10]</i></p>	
+					
+					<p>"Do not swear by your fathers; and whoever wants to swear should swear by Allah." <br><i>[Sahih al-Bukhari 7401]</i></p>
+					<p>"He who asks pardon is not a confirmed sinner, even if he returns to his sin seventy times a day." <br><i>[Sunan Abi Dawud 1514]</i></p>
+					
+					<p>"It is the duty of a Muslim man who has something which is to be given as bequest not to have it for two nights without having his will written regarding it."
+					<br><i>[Sunan Abi Dawud 2862]</i></p>
+					
+					
+					<p>"Among the most dutiful of deeds is that a man nurture relations with the people his father was friends with."<br><i>[Jami` at-Tirmidhi 1903]</i></p>
+					
+					<p>"Some of the best things with which you can change grey hair are Henna and Katam.''<br><i>[Sunan an-Nasa'i 5079]</i></p>
+					
+					
+					
+					
+					
+					
+					
+					<p> <br><i> </i></p>
+					<p> <br><i> </i></p>
+					<p> <br><i> </i></p>
+					<hr>
+				</div>	
+				<br>
+				
+				
+			</div>
+			
+			
+			
+			<div id = "dailyQuote">
+			
+				<h2> Daily Quote </h2>
+				<p>"There is nothing between a person and disbelief except abandoning Salah."<br><i>[Sunan an-Nasa'i 464]</i><p>
+		
+				
+			</div>
+		</div>
+			
+		
+	
+		<script type = "text/javascript" >
+		
+			
+			const idCode = [ "prayer", "charity" , "jihad" , "etiqutte" , "knowledge", "endOfTime", "general" ];
+			
+			
+			var flag = Array(10).fill(false);
+		
+			
+			
+			
+			$("button").hover(function()
+			{
+				var buttonId = $(this).attr("id");
+				var clicked = idCode.indexOf(buttonId);
+				
+				if(flag[clicked] == false)
+				{				
+					$(this).css("backgroundColor", "#153b32f1");
+				}
+			}, 
+			function()
+			{
+				var buttonId = $(this).attr("id");
+				var clicked = idCode.indexOf(buttonId);
+				
+				if(flag[clicked] == false)
+				{				
+					$(this).css("backgroundColor", "#2e7d6bf1");
+				}
+				
+			});
+			
+			$("button").click(function()
+			{
+				
+				var buttonId = $(this).attr("id");
+				
+				var clicked = idCode.indexOf(buttonId);
+				
+				var contentId = "#" + buttonId + "Content";
+				
+				if(flag[clicked] == false)
+				{
+					$(contentId).css("display" , "block");
+					$(this).css("backgroundColor", "#1b365efe");
+					flag[clicked] = true;
+				}
+				else
+				{
+					$(contentId).css("display" , "none");
+					flag[clicked] = false;
+					
+				}
+				
+			
+			});
+			
+			
+		
+		</script>
+		
+	
+	
+	
+	
+	</body>
+
+
+</html>

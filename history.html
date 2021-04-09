@@ -1,0 +1,432 @@
+<html>
+	<head>
+	
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		
+		<title> Saying of Prophet</title>
+		
+		<script type = "text/javascript" src = "jquery.js">
+		</script>
+		
+		<style = "text/css>
+		
+
+			@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dancing+Script:wght@600&family=Fredoka+One&display=swap');
+			
+			body
+			{
+				<!--background-color:#fce468;-->
+				
+				font-size:2vw;
+				margin:0vw;
+				font-family: 'Akaya Telivigala', cursive;
+				color: white;
+				background-color: #ddda25;
+				opacity: 0.9;
+				background: linear-gradient(135deg, #bcad0c55 0%, transparent 25%) -24px 0/ 48px 48px, linear-gradient(225deg, #bcad0c 0%, transparent 25%) -24px 0/ 48px 48px, linear-gradient(315deg, #bcad0c55 25%, transparent 25%) 0px 0/ 48px 48px, linear-gradient(45deg, #bcad0c 25%, #ddda25 25%) 0px 0/ 48px 48px;
+			
+			}
+			
+			a:link
+			{
+				text-decoration: none;
+				color:#1324bdfe;
+			}
+			a:hover
+			{
+				color : #2e7d6bf1;
+			}
+			
+			.clear-float
+			{
+				clear:both;
+			}
+			#heading
+			{
+				width: 50%;
+				height: 225px;
+				max-height: 20vw;
+				padding: 1vw 2vw 2.5vw 3vw;
+				float:left;
+				text-align:center;	
+				font-size:3vw;
+				font-weight:normal;	
+				color:#004d00;
+				font-family: 'Fredoka One', cursive;
+				position:relative;
+				top:-3vw;
+					
+				
+				
+			}
+			h1
+			{
+				
+				
+			}
+			
+			#contact
+			{
+				height:auto;
+				width:22%;
+				float:left;
+				padding-top:2vw;
+				padding-left:1.5vw;
+				font-size: 1.4vw;
+				
+				
+			}
+			
+			.phone
+			{
+				width:3vw;
+				height:auto;
+				margin:.5vw;
+				<!--background-color:yellow;-->
+			}
+			#logo
+			{
+				width:20%;
+				
+				float:left;
+				border-radius:50%;
+				box-sizing:border-box;
+			}
+			#menubar
+			{
+			margin: 10px auto;
+			width:97%;
+			
+			height:3.6vw;
+			
+			border: 5px groove grey;
+			color:#004d00;
+			background-color:#F4F46F;
+			
+				
+
+			}
+			.menu
+			{
+				float: left;
+				width: 23.25%;
+				height:2vw;
+				padding: .45vw;
+				
+				font-size: 2.1vw;
+				font-weight:bold;
+				text-align: center;		
+				border: .37vw groove grey;		
+				font-family: 'Playfair Display', serif;		
+				
+			}
+			
+			#timeline
+			{
+				
+				border-left: .6vw groove #8dadbafe;
+				border-spacing:0vw;
+				margin-top:2.0vw;
+				overflow:hidden;
+				
+				
+				
+			}
+			tr
+			{
+				line-height:35px;
+				background-color: #2b7032fe;
+				overflow:hidden;
+				
+			
+				
+				
+			}
+			
+			th
+			{
+				font-size:3vw;	
+				font-weight:normal;
+				padding:2vw;
+				border-left:none ;
+				color:#1f4d14fe;
+				font-weight:bold;
+				background-color: #ddda25;
+				opacity: 1;
+				background: linear-gradient(135deg, #bcad0c55 0%, transparent 25%) -24px 0/ 48px 48px, linear-gradient(225deg, #bcad0c 0%, transparent 25%) -24px 0/ 48px 48px, linear-gradient(315deg, #bcad0c55 25%, transparent 25%) 0px 0/ 48px 48px, linear-gradient(45deg, #bcad0c 25%, #ddda25 25%) 0px 0/ 48px 48px;
+			
+			}
+			th:first-child
+			{
+				font-size: 2.7vw;
+			}
+			
+			td:first-child
+			{
+					-webkit-border-radius:10%;
+				-moz-border-top-left-radius:10%;
+				border-bottom: .5vw groove #dceb38fe;
+				
+				font-size: 1.8vw;
+				width:2.9vw;
+				font-weight:bold;
+				
+				padding:1.5vw 1.0vw 0vw 4vw;
+			}
+			td:last-child
+			{
+					border-radius:10%;
+				color:#dceb38fe;
+				border-bottom: .5vw groove white;
+				
+				
+				
+				font-weight:bold;
+				font-size: 1.8vw;
+				padding:1.5vw .5vw 0vw 2.5vw;
+				cursor:pointer;
+			}
+			
+			#content1
+			{
+				display:none;
+				font-size:1.3vw;
+				color: white;
+			}
+			#content2
+			{
+				display:none;
+				font-size:1.3vw;
+				color: white;
+			}
+			#content3
+			{
+				display:none;
+				font-size:1.3vw;
+				color: white;
+			}
+			#content4
+			{
+				display:none;
+				font-size:1.3vw;
+				color: white;
+			}
+			
+		
+		</style>
+	
+	</head>
+	
+	<body>
+		<div id = "topbar">
+				<div><img id = "logo" src = "images/logo.jpg" ></div>
+				<div id = "heading"><h1>Timeline</h1></div>
+				<div id = "contact">
+					<div> XXXXXXXXXX<img class = "phone" src = "images/phone.jpg"></div>
+					<div >Sayings of Prophet<a href = "https://twitter.com/SayingofProphet?s=20"><img class = "phone" src = "images/twitter.png"></a></div>
+				</div>
+		</div>
+		
+		<div class = "clear-float"></div>
+		
+		
+		<div id = "menubar" >
+			<div class = "menu"><a href = "index.html">Home</a></div>
+			<div class = "menu"><a href = "index.html">Farewell Speech</a></div>
+			<div class = "menu"><a href = "history.html">Timeline</a></div>
+			<div class = "menu"><a href = "index.html">Three</a></div>
+		</div>
+		
+		<div class = "clear-float"></div>
+		
+		<div>
+		<table id = "timeline" >
+			
+			<tr>
+				<th>Year(A.D)</th>
+				<th>Event</th>
+			</tr>
+			
+			
+			
+			<tr>
+				<td >570</td>
+				<td >Birth of the Prophet Muhammad (the Prophet's father died a few months before his birth)<br>
+					<span id = "content1"> The Holy Prophet (S.A.W) was born in Makkah, on 12 Rabi-ul-Awal, 570 A.D. He belonged to the Banu Hashim clan of the great tribe Quraish. His father was Abdullah bin Abdul Muttalib and his mother was Aminah. Before the birth of the Holy Prophet (S.A.W), his father died in a commercial visit to Syria. Four months after the death of Abdullah, Mohammad (S.A.W)’s mother gave birth to him. He was named Mohammad (S.A.W) by his grandfather, Abdul Muttalib while Aminah named him Ahmed.
+					</span>
+				</td>
+			</tr>
+		
+			
+			
+			<tr>
+				<td >576</td>
+				<td >Death of the Prophet's mother Aminah, when the Prophet is sixy ear old</td>
+			</tr>
+			
+			
+			<tr>
+				<td >578</td>
+				<td >Death of the Prophet's grandfather, Abdul Muttalib</td>
+			</tr>
+			
+			<tr>
+				<td >595</td>
+				<td >The Prophet's marriage to Khadijah
+					<span id = "content4"> The Holy Prophet (S.A.W) was famous for his truthfulness and honesty for which he was given the titles of ‘Al Sadiq’and ‘Al Amin’ by the Makkans. Hazrat Khadija too was aware of these marvellous attributes of the Prophet. On the requirement of a trustworthy man to lead her caravan, Hazrat Khadija (R.A) called him; his hiring for that purpose became finalized. On this journey to Syria, Hazrat Khadija (R.A)’s slave Maysarah accompanied the Prophet (S.A.W). Prophet (S.A.W) worked diligently during the trip and earned a great deal of profit.
+					When they came back, Khadija (R.A) was told about Prophet (S.A.W)’s honesty by her slave Maysarah who has greatly praised Mohammad (S.A.W)’s virtues and trading skills. Now Hazrat Khadija (R.A) was so impressed that she sent a marriage proposal through her friend Nafeesah to him, which he (S.A.W) approved. At the time of marriage, Hazrat Khadija (R.A) was 40 years old while Mohammad (S.A.W) was 25 years old. The marriage was successful. They were blessed with four daughters and two sons; Ruqayyah, Zaynab, Umme Kulthoom, Fatima, Abdullah and Ibrahim (both sons were passed away during childhood).</span>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>610</td>
+				<td >The Prophet receives the first revelation of the Quran at Mount
+al-Nur near Makkah</td>
+			</tr>
+			
+			<tr>
+				<td> 613</td>
+				<td>First public preaching.</td>
+			</tr>
+			
+			<tr>
+				<td >615</td>
+				<td >Migration of some of the companions of the Prophet to Abyssinia(Ethiopia) </td>
+			</tr>
+			<tr>
+				<td >616-619</td>
+				<td>The Banu Hashim boycotts the Prophet and his family</td>
+			</tr>
+			
+			<tr>
+				<td >619</td>
+				<td >Death of the Prophet's wife Khadijah and uncle Abu Talib</td>
+			</tr>
+			
+			<tr>
+				<td >619</td>
+				<td >The Prophet visits Taif for support, but the people there give him humiliating treatment</td>
+			</tr>
+			
+			<tr>
+				<td >620</td>
+				<td >The Prophet's Night Journey to Jerusalem and then to the Seven Heavens</td>
+			</tr>
+			
+			<tr>
+				<td >622</td>
+				<td >The Prophet's migration (hijrah) from Makkah to Madinah (beginning of the Islamic calendar)</td>
+			</tr>
+			<tr>
+				<td >624</td>
+				<td >Battle of Badr: the pagan Makkans were defeated by the Muslims</td>
+			</tr>
+			
+			<tr>
+				<td >625</td>
+				<td >Battle of Uhud: the Muslims were defeated by the pagan Makkans</td>
+			</tr>
+			
+			<tr>
+				<td >628</td>
+				<td >The Peace Treaty of Hudaybiyyah.</td>
+			</tr>
+			
+			<tr>
+				<td >630</td>
+				<td >No-war pact broken by the pagan Makkans. Makkah's surrender-<b>Fatah Makkah</b></td>
+			</tr>
+			
+			<tr>
+				<td >631</td>
+				<td>The Year of Embassies'—Islam accepted by Arabian tribes.</td>
+			</tr>
+			
+			<tr>
+				<td >632</td>
+				<td >The Prophet's Farewell Pilgrimage to Makkah</td>
+			</tr>
+			
+			<tr>
+				<td >632</td>
+				<td >Death of the Prophet Muhammad at Madinah</td>
+			
+		</table>
+		</div>
+		
+		
+		
+		
+		<script type = "text/javascript" >
+		
+			//const idCode = [ "prayer", "charity" , "jihad" , "etiqutte" , "knowledge", "endOfTime", "general" ];
+			
+			
+			var flag = Array(20).fill(false);
+			
+			
+			
+			$("tr").click(function()
+				{
+					//num = parseInt( $(this).parent().index() );
+					//num = $(e.target).get(0).;
+					var num = $(this).index();
+					
+					if(flag[num] == false)
+					{
+						$(this).children("td:first").css("color", "yellow");
+						//alert(x);
+						var tdId = "#content"+num;
+			
+						$(tdId).css("display", "block");
+						//alert(td);
+						flag[num] = true;
+					}
+					else
+					{
+						$(this).children("td:first").css("color", "white");
+						//alert(x);
+						var tdId = "#content"+num;
+			
+						$(tdId).css("display", "none");
+						//alert(td);
+						flag[num] = false;
+					}
+				});
+				
+				
+				$("#timeline tr").hover(function()
+				{
+					var clicked = $(this).index();
+					//alert($(this).parent("tr"));
+					//if(clicked == 0) {break;}
+					//alert($this);
+					if(flag[clicked] == false)
+					{				
+						$(this).css("backgroundColor", "#153b32f1");
+						
+					}
+				}, 
+				function()
+				{
+					var clicked = $(this).index();
+					
+					
+					if(flag[clicked] == false)
+					{				
+						$(this).css("backgroundColor", " #2b7032fe");
+						
+					}
+					
+				});
+			
+		
+		
+		
+		
+		
+		</script>
+	</body>
+		
+</html>

@@ -1,0 +1,189 @@
+100 Commandments and Doctrines from the Quran
+
+1. Do not be rude in speech (3:159)
+2. Restrain anger (3:134)
+3. Be good to others (4:36)
+4. Do not be arrogant (7:13)
+5. Forgive others for their mistakes (7:199)
+6. Speak to people mildly (20:44)
+7. Be moderate in your bearing and the volume of your speech (31:19)
+8. Do not ridicule others (49:11)
+9. Be dutiful to parents (17:23)
+10. Do not say a word of disrespect to parents (17:23)
+11. Do not enter parents’ private room without asking permission (24:58)
+12. Commit to writing any transaction involving the taking or giving of loans (2:282)
+13. Do not follow anyone blindly (2:170)
+14. Grant more time to repay if the debtor is in hard times (2:280)
+15. Don’t be involved with usury or interest (2:275)
+16. Do not engage in bribery (2:188)
+17. Do not break any promise (2:177)
+18. Keep and fulfil all trusts (2:283)
+19. Do not mix the truth with falsehood (2:42)
+20. Judge with justice between people (4:58)
+21. Stand out firmly for justice (4:135)
+22. Wealth of the dead should be distributed among his family members (4:7)
+23. Women have the right of inheritance (4:7)
+24. Do not take for yourself the property of orphans (4:10)
+25. Protect orphans (2:220)
+26. Do not consume one another’s wealth unjustly (4:29)
+27. Facilitate peace between those in conflict (49:9)
+28. Avoid being suspicious (49:12)
+29. Spend wealth in charity (57:7)
+30. Encourage feeding of the poor (107:3)
+31. Seek out the needy and help them (2:273)
+32. Do not spend money extravagantly (17:29)
+33. Do not invalidate charity by bragging about your generosity (2:264)
+34. Honor guests (51:26)
+35. Enjoin virtue to others only after practicing it yourself (2:44)
+36. Do not engage in or spread corruption (2:60)
+37. Do not prevent people from going to houses of worship (2:114)
+38. Never engage in fighting as an aggressor but only in defense (2:190)
+39. Do not engage in compulsion regarding religion (2:256)
+40. Believe in all prophets (2:285)
+41. Do not have sexual intercourse during the menstrual period (2:222)
+42. Do not commit adultery (17:32)
+43. Choose leaders based on their merit (2:247)
+44. God does not burden a person beyond his capacity; nor should we (2:286)
+45. Do not become divided (3:103)
+46. Think deeply about the wonders of nature and the creation of this universe (3:191)
+47. Men and women have equal rewards for their deeds (3:195)
+48. Do not marry those related to you by blood (4:23)
+49. The man is the protector and supporter of the family (4:34)
+50. Do not be miserly (4:37)
+51. Do not envy others (4:54)
+52. Do not support or be an advocate for those who betray their trusts (4:105)
+53. Support one another in virtue and piety, not in sin or enmity (5:2)
+54. Be just and do not let hatred swerve you from justice (5:8)
+55. Do not consume dead animals, the blood of animals, or pork (5:3)
+56. Avoid intoxicants and alcohol (5:90)
+57. Do not gamble (5:90)
+58. Do not insult other people’s deities (6:108)
+59. Be honest; don’t cheat in any of your dealings (6:152)
+60. Eat and drink but be not excessive (7:31)
+61. Wear good clothing during prayer times (7:31)
+62. Protect and help those who seek protection (9:6)
+63. Strive for purity (9:108)
+64. Never give up hope of Allah’s Mercy (12:87)
+65. Know that Allah forgives a wrong done out of ignorance if the person repents and corrects himself (16:119)
+66. Inviting others to the way of God should be done with wisdom and graciousness (16:125)
+67. No one can bear another person’s sins (17:15)
+68. Do not kill your children for fear of poverty (17:31)
+69. Avoid vain talk (23:3)
+70. Respect other people’s privacy, especially in their own homes (24:27)
+71. Know that God provides security and peace to those who worship Him and act virtuously (24:55)
+72. Be modest and humble (25:63)
+73. Strive for reward in the Hereafter but do not neglect your affairs in this world (28:77)
+74. Invoke not any other deity along with God (28:88)
+75. Do not engage in homosexuality (29:29)
+76. Enjoin the right and forbid the wrong (31:17)
+77. Women should not display or flaunt their beauty and charms (33:33)
+78. God forgives all sins when the sinner repents and turns to Him (39:53)
+79. Repel evil by something that is better (41:34)
+80. Decide affairs by consultation (42:38)
+81. Know that there should be no monasticism in religion (57:27)
+82. Those who have knowledge will be given a higher rank by God (58:11)
+83. Treat non-Muslims in a kind and fair manner (60:8)
+84. Stay away from greed and stinginess (64:16)
+85. Do not ignore or push away the needy (93:10)
+86. Pardon and forgive the mistakes of others (3:135)
+87. Establish prayer and give in charity (31:4)
+88. Know that the bounty of God is better than anything man can amass or hoard (10:58)
+89. God puts love and affection between the hearts of those who believe in Him (8:63)
+90. Those who purify their souls succeed, and those who corrupt their souls fail (91:10)
+91. Those who believe in God find satisfaction in remembering Him (13:28)
+92. Those who believe and do good are given joy and peace of mind (13:29)
+93. Enjoin patience and compassion (90:17)
+94. Know that God gave humans hearing, sight, intelligence, and affections so that they might be grateful (16:78)
+95. Compete with one another in doing good (21:90)
+96. Know that God created the universe with meaning and purpose (3:191)
+97. Guard your modesty (23:5)
+98. Know that being just is next to piety (5:8)
+99. Fight when necessary to defend yourselves but do not aggress (2:190)
+100. Know that it is only righteousness that makes a person noble (49:13)
+
+/*$("#prayer").click(function()
+			{
+				if(flag[0] == false)
+				{
+					//$("#prayerContent").css("display", "block");
+					//$("#prayerContent").fadeIn();
+					$("#prayerContent").show();
+					$(this).css("backgroundColor", "#1b365efe");
+					
+					flag[0] = true;
+				}
+				else
+				{
+					//$("#prayerContent").css("display", "none");
+					$("#prayerContent").fadeOut();
+					$(this).css("backgroundColor", "#2e7d6bf1");
+					flag[0] = false;
+				}
+				
+			});
+			
+			$("#charity").click(function()
+			{
+				if(flag[1] == false)
+				{
+					$("#charityContent").css("display" , "block");
+					$(this).css("backgroundColor", "#1b365efe");
+					flag[1] = true;
+				}
+				else
+				{
+					$("#charityContent").css("display" , "none");
+					$(this).css("backgroundColor", "#2e7d6bf1");
+					flag[1] = false;
+				}
+			});
+			
+			$("#jihad").click(function()
+			{
+				if(flag[2] == false)
+				{
+					$("#jihadContent").css("display" , "block");
+					$(this).css("backgroundColor", "#1b365efe");
+					flag[2] = true;
+				}
+				else
+				{
+					$("#jihadContent").css("display" , "none");
+					$(this).css("backgroundColor", "#2e7d6bf1");
+					flag[2] = false;
+				}
+			});
+			
+			
+			$("#etiqutte").click(function()
+			{
+				if(flag[3] == false)
+				{
+					$("#etiqutteContent").css("display" , "block");
+					$(this).css("backgroundColor", "#1b365efe");
+					flag[3] = true;
+				}
+				else
+				{
+					$("#etiqutteContent").css("display" , "none");
+					$(this).css("backgroundColor", "#2e7d6bf1");
+					flag[3] = false;
+				}
+			});
+			
+			$("#general").click(function()
+			{
+				if(flag[4] == false)
+				{
+					$("#generalContent").css("display" , "block");
+					$(this).css("backgroundColor", "#1b365efe");
+					flag[4] = true;
+				}
+				else
+				{
+					$("#generalContent").css("display" , "none");
+					$(this).css("backgroundColor", "#2e7d6bf1");
+					flag[4] = false;
+				}
+			});*/
+			
