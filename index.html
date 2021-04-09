@@ -2,27 +2,40 @@
 	<head>
 		<meta charset = "UTF-8">
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		
 		<title> Saying of Prophet</title>
 		
 		<script type = "text/javascript" src = "jquery.js">
 		</script>
 		
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cormorant+Garamond&family=Inconsolata:wght@300&family=Recursive:wght@300&display=swap" rel="stylesheet">
+		
+	
+		
 		
 		<style = "text/css">
 		
+		*
+		{
+			
+			padding:0px;
+		
+		}
 		body
 		{
 			<!--background-color:#3e7309e1;-->
 			
-			margin:1vw;
-			font-family: 'Akaya Telivigala', cursive;
-			color:#1743e3fe;
+			font-family: 'Inconsolata', monospace;
 			
+			<!--font-family: 'Akaya Telivigala', cursive;-->
+			color:white;
+			font-size: 3vw;
 			background-color: #ddda25;
 			opacity: 0.9;
 			background: linear-gradient(135deg, #bcad0c55 0%, transparent 25%) -24px 0/ 48px 48px, linear-gradient(225deg, #bcad0c 0%, transparent 25%) -24px 0/ 48px 48px, linear-gradient(315deg, #bcad0c55 25%, transparent 25%) 0px 0/ 48px 48px, linear-gradient(45deg, #bcad0c 25%, #ddda25 25%) 0px 0/ 48px 48px;
 			
-			Z-index: 1;
+	
 
 		}
 		
@@ -46,6 +59,7 @@
 		{
 			max-height:240px;
 			height:auto;
+			margin-bottom:7vw;
 			
 			
 		}
@@ -77,11 +91,7 @@
 			top:-3vw;
 
 		}
-		h1
-		{
-			
-			
-		}
+		
 		
 		
 		
@@ -105,12 +115,12 @@
 		}
 		#menubar
 		{
-			margin: 10px auto;
+			margin: 1.0vw auto;
 			width:97%;
 			
 			height:3.6vw;
 			
-			border: 5px groove grey;
+			border: .5vw groove grey;
 			color:#004d00
 			background-color:#F4F46F;
 			
@@ -120,15 +130,15 @@
 		.menu
 		{
 			float: left;
-			width: 23.25%;
-			height:2vw;
-			padding: .45vw;
-			align:center;
-			font-size: 2.1vw;
-			font-weight:bold;
-			text-align: center;		
-			border: .37vw groove grey;		
-			font-family: 'Playfair Display', serif;
+				width: 23.25%;
+				height:2vw;
+				padding: .45vw;
+				
+				font-size: 2.1vw;
+				font-weight:bold;
+				text-align: center;		
+				border: .37vw groove grey;		
+				font-family: 'Playfair Display', serif;		
 			
 		}
 		
@@ -140,6 +150,13 @@
 		
 			
 			
+		}
+		p
+		{
+			font-size: 1.8vw;
+			font-family: 'Cormorant Garamond', serif; !important;
+			color:yellow;
+			padding:3vw;
 		}
 		
 		
@@ -182,7 +199,7 @@
 		{
 			display:none;
 			float:left;
-			background-color:white;
+			background-color: #2b7032fe;
 			border-radius:20%;
 			padding: 2vw;
 			
@@ -195,6 +212,9 @@
 		{
 			display:none;
 			float:left;
+			background-color: #2b7032fe;
+			border-radius:20%;
+			padding: 2vw;
 			
 		}
 		#charity
@@ -205,6 +225,9 @@
 		{
 			display:none;
 			float:left;
+			background-color: #2b7032fe;
+			border-radius:20%;
+			padding: 2vw;
 			
 		}
 		#jihad
@@ -215,6 +238,9 @@
 		{
 			display:none;
 			float:left;
+			background-color: #2b7032fe;
+			border-radius:20%;
+			padding: 2vw;
 			
 		}
 		#etiqutte
@@ -225,6 +251,9 @@
 		{
 			display:none;
 			float:left;
+			background-color: #2b7032fe;
+			border-radius:20%;
+			padding: 2vw;
 			
 		}
 		#knowledge
@@ -237,6 +266,9 @@
 		{
 			display:none;
 			float:left;
+			background-color: #2b7032fe;
+			border-radius:20%;
+			padding: 2vw;
 			
 		}
 		#endOfTime
@@ -249,6 +281,9 @@
 		{
 			display:none;
 			float:left;
+			background-color: #2b7032fe;
+			border-radius:20%;
+			padding: 2vw;
 			
 			
 		}
@@ -266,29 +301,125 @@
 		#dailyQuote
 		{
 			font-size: 2.4vw;
-			color: red;
-			width:34.6%;
+			padding: .3vw;
+			padding-top:0px;
+			width:34%;
 			float:right;
-			height: 100%;
+			height: 100vh;
+			overflow:auto;
+			border-radius:10%;
 			
-			opacity: 0.9;
-			background-image:  linear-gradient(30deg, #53681b 12%, transparent 12.5%, transparent 87%, #53681b 87.5%, #53681b), linear-gradient(150deg, #53681b 12%, transparent 12.5%, transparent 87%, #53681b 87.5%, #53681b), linear-gradient(30deg, #53681b 12%, transparent 12.5%, transparent 87%, #53681b 87.5%, #53681b), linear-gradient(150deg, #53681b 12%, transparent 12.5%, transparent 87%, #53681b 87.5%, #53681b), linear-gradient(60deg, #53681b77 25%, transparent 25.5%, transparent 75%, #53681b77 75%, #53681b77), linear-gradient(60deg, #53681b77 25%, transparent 25.5%, transparent 75%, #53681b77 75%, #53681b77);
-			background-size: 40px 70px;
-			background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+			
+			background-color: black;
+    background-image: -webkit-radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 40px), -webkit-radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px), -webkit-radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px), -webkit-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+    background-image: -moz-radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 40px), -moz-radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px), -moz-radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px), -moz-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+    background-image: -ms-radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 40px), -ms-radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px), -ms-radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px), -ms-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+    background-image: -o-radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 40px), -o-radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px), -o-radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px), -o-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+    background-image: radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+    background-position: 0 0px, 40px 60px, 130px 270px, 70px 100px;
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+		}
 		
-
+		#dailyQuote p
+		{
+			color: yellow !important;
 		}
 		h2
 		{
-			font-size: 3vw;
+			font-size: 4vw;
 			text-align: center;
 			font-family: Times;
+			color:  #2e7d6bf1;;
 		}
 		
+	
+		
 
+		@media(max-width: 500px)
+		{
+			#logo
+			{
+				width: 25%;
+			}
+			p
+			{
+				font-size: 4.2vw;
+				
+			}
+		
+			
+			#menubar
+			{
+				
+				
+				height:4.9vw;
+				
+				
+					
+
+			}
+			.menu
+			{
+				
+					width: 23.125%;
+					padding: .5vw;
+					height:3.2vw;
+				
+					font-size: 2.6vw;
+				
+			}
+			button
+			{
+				font-size: 6.8vw !important;
+				margin: 1.9vw;
+				width: 29vw;
+				height: 20.9vw;
+			}
+			
+			#heading
+			{
+				
+				font-size:5vw;
+				padding: 1vw 2vw 2.5vw 3vw;
+				float:left;
+				text-align:center;	
+				top:-9vw;
+				width:45%;
+				
+				
+				<!--background-color:red;-->
+				
+
+			}
+			
+			#dailyQuote
+			{
+				font-size: 2.4vw;
+				padding: .3vw;
+				height:auto !important;
+				margin-top:5vw;
+				
+				position:relative;
+			
+				width: 100%;
+				float:left !important;
+				
+			}
+			#content
+			{
+				border:none;
+				width:100%;
+				height:auto;
+				margin-left:0vw;
+				
+			}
+		}
+			
 
 		
 		</style>
+		
+		
 	
 	
 	
@@ -329,8 +460,8 @@
 					<p>"The mu'adhdhin will receive forgiveness to the extent to which his voice reaches, and every moist and dry place will testify on his behalf"<br><i>[Sunan Abu-Dawud 515] </i></p>
 					<p>"Whenever anyone of you offers his prayer he is speaking in private to his Lord. "<br><i>[Sahih al-Bukhari 531] </i></p>
 					<p> "Whoever is in the Masjid waiting for the prayer, he is in a state of prayer."<br><i>[Sunan an-Nasa'i 734] </i></p>
-					<p>"No one will enter the Fire who prays before the sun rises and before it sets."<br><i>[Sunan an-Nasa'i 487]</i><p>
-					<p>"There is nothing between a person and disbelief except abandoning Salah."<br><i>[Sunan an-Nasa'i 464]</i><p>
+					<p>"No one will enter the Fire who prays before the sun rises and before it sets."<br><i>[Sunan an-Nasa'i 487]</i></p>
+					<p>"There is nothing between a person and disbelief except abandoning Salah."<br><i>[Sunan an-Nasa'i 464]</i></p>
 				<hr>
 				</div>
 				<br>
@@ -499,8 +630,10 @@
 			});
 			
 			
+			$("#dailyQuote").height($(window).height());
 		
 		</script>
+		
 		
 	
 	
